@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+}
+.right-nav, .left-nav, #middle{
+    display:inline-table;
+}
+.right-nav{
+    min-height: 250px;
+    float:right;
+    width:20%;
+    position: fixed;
+    
+    /* top:80px; */
+    
+}
+.right-list{
+    border-left: 2px solid navy;
+    list-style-type: none;
+    padding: 10px;
+}
+.right-list > li > a{
+    text-decoration: none;
+    
+    
+}
+.right-list > li > a > span{
+    /* color: black; */
+    font-size:18px;
+    
+    
+}
+svg{
+    position: relative;
+    float:right;
+    top: 6px;
+    color:black;
+}
+#subGuides {
+    display: none;
+    color:black;
+    list-style-type: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+#subGuides > li{
+    padding :3px;
+    
+}    
+.right-list > li  {
+    text-align: justify;
+    padding:3px;
+    
+}
+.scrollbar{
+    height:300px;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+
+}
+a{
+    text-decoration: none;
+}
+/* slide */
+.slideup{
+    display:none;
+}
+.slideup, .slidedown {
+    max-height: 0;            
+    overflow-y: hidden;
+    
+    transition: max-height 0.5s ease-in-out;
+    display:block;
+}
+.slidedown {            
+    max-height: 800px;                    
+} 
+/* .left-nav{
+    min-height:300px;
+    
+} */
+.left-list {
+    list-style-type: none;
+    padding: 10px;
+    transition: 0.4s;    
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+
+#middle{
+    text-align: justify;
+  width:65%;
+  /* background-color: #832121; */
+}
+#middle h1{
+    text-align: center;
+}
+.middle1{
+    padding:10px;
+}
+#style::-webkit-scrollbar-track {
+            background-color:#ffffff;
+            
+        }
+#style::-webkit-scrollbar-thumb {
+            background-color:black;
+            
+        }
+
+#style::-webkit-scrollbar
+{
+    width: 3px;
+    /* background-color: #000000; */
+}
+
+
+.left-list >li  {
+    
+    text-decoration: none;
+    border-bottom: 0.5px solid grey; 
+    
+}
+
+.left-list > li > a > span{
+    color: black;
+    font-size:18px;
+    padding: 6px 10px;
+    display: inline-block;  
+    
+}
+/* .middle1.active{
+    background-color: red;
+} */
+.right-nav > ul > li >a.active  {
+    /* border-bottom: 2px solid black; */
+    color:red;
+  }
+
+
+
+    
